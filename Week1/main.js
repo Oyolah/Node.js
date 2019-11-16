@@ -17,7 +17,7 @@ const server = http.createServer((req, res)=>{
             }
     else if(req.url == '/subtract'){
                 res.writeHead(300, {'Content-Type':'text/html'})
-                state --
+                state--
                 res.end(`<html><head><body><h1>The subtract number is: ${state}</h1></body></head></html>`)
             }
     else if(req.url == '/reset'){
